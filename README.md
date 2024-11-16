@@ -1,15 +1,11 @@
 # ClinicalDistilBERT
 
-This project trains a DistilBERT-based masked language model (MLM) on clinical datasets using the Hugging Face Transformers library.
+## Repository Structure
+- `scripts/`: Contains Python scripts for training and distillation.
+  - `train_tinybert.py`: Script to train the TinyBERT model using distillation.
+  - `tinybert_distillation.py`: Implements the distillation logic.
+- `notebooks/`: Jupyter notebooks for prototyping and experimentation.
+  - `data_preparation.ipynb`: Notebook for preparing and tokenizing datasets.
+  - `training.ipynb`: Notebook for training TinyBERT interactively.
 
-## Features
-- Pretrained DistilBERT model fine-tuned for clinical settings.
-- Custom callbacks for logging.
-- Configurable hyperparameters using `TrainingArguments`.
 
-## Getting Started
-
-### Prerequisites
-Install the required Python packages:
-```bash
-pip install -r requirements.txt
